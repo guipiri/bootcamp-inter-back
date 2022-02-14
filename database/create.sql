@@ -9,7 +9,7 @@ CREATE TABLE produtos (
 	id_produto serial primary key,
 	nome text not null,
 	descri varchar not null,
-	preco real not null,
+	preco real not null
 )
 
 INSERT INTO produtos (nome, descri, preco)
