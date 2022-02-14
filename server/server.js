@@ -18,5 +18,5 @@ app.use("/", require("./route/productsRoutes"));
 app.use("/", require("./route/usersRoutes"));
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log(`Running on port 3000`);
+  console.log(`Running on port ${process.env.PORT}`);
 });
