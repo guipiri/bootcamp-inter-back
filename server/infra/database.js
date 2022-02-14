@@ -6,7 +6,9 @@ const db = pgp({
   host: "ec2-34-233-214-228.compute-1.amazonaws.com",
   port: 5432,
   database: "d493j6b0n83hev",
-  sslmode: "require",
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 module.exports = db;
